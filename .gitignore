@@ -1,0 +1,30 @@
+# 环境与密钥
+.env
+.venv/
+venv/
+env/
+
+# 数据与数据库（按需保留或备份）
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# 前端
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统
+.DS_Store
+Thumbs.db

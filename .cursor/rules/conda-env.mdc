@@ -1,0 +1,20 @@
+---
+description: 运行 Python/后端相关命令时使用指定的 conda 环境
+alwaysApply: true
+---
+
+# Conda 环境
+
+在本项目中，**所有在终端执行的 Python、pip、uvicorn 等命令**都应在以下 conda 环境中运行：
+
+- **环境名称**：`pa`（请按你的实际环境名修改本文件中的名称）
+
+## 要求
+
+- 在运行 `pip install`、`python`、`uvicorn`、`pytest` 等命令前，先激活该 conda 环境。
+- 示例：`conda activate pa && pip install -r requirements.txt`
+- 若终端已处于该环境（例如你已在 IDE 中选择了该解释器），可直接执行命令。
+
+## 修改环境名
+
+若你的环境不叫 `pa`，请编辑本文件（`.cursor/rules/conda-env.mdc`），将上文中的 `pa` 改为你的 conda 环境名称。

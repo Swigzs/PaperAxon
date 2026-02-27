@@ -1,0 +1,21 @@
+# PaperAxon systemd 示例（Linux 服务器）
+# 使用前请修改 User、WorkingDirectory、Environment、ExecStart 等。
+
+[Unit]
+Description=PaperAxon API
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/path/to/PaperAxon
+Environment=PYTHONPATH=/path/to/PaperAxon
+Environment=DATA_DIR=/var/lib/paperaxon/data
+EnvironmentFile=/path/to/PaperAxon/.env
+ExecStart=/path/to/PaperAxon/.venv/bin/uvicorn backend.main:app --host 0.0.0.0 --port 18527
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

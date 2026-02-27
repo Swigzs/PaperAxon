@@ -1,0 +1,29 @@
+# PaperAxon backend - V0.1
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# LangGraph + LangChain (Qwen OpenAI-compat)
+langgraph>=0.0.26
+langchain>=0.1.0
+langchain-openai>=0.0.5
+
+# Storage & PDF
+aiosqlite>=0.19.0
+pymupdf>=1.23.0
+arxiv>=2.0.0
+requests>=2.31.0
+
+# ID & scheduling
+nanoid>=2.0.0
+apscheduler>=3.10.0
+
+# Aliyun TTS (nls - 智能语音交互)
+# 阿里云语音合成 REST/WebSocket 需 requests，若用官方 SDK 可替换
+# aliyun-python-sdk-core>=2.14.0
+
+# Knowledge graph
+networkx>=3.2.0
+
+# Env
+python-dotenv>=1.0.0
